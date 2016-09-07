@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Dataproofer Demo - Jonathan Page - UHERO</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/serif.css">
@@ -27,6 +27,9 @@
 <section>
     <h1>Dataproofer</h1>
     <p>Spell check for data</p>
+    <p>&nbsp;</p>
+    <p><em>Jonathan Page</em></p>
+    <p>UHERO, University of Hawaii</p>
 </section>
 <section>
     <p>Spell check identifies potential spelling errors.</p>
@@ -58,7 +61,7 @@
 </section>
 <section>
     <section>
-    <h1>Using Dataproofer</h1>
+    <h2>Using Dataproofer</h2>
     </section>
     <section>
     <h2>Install Dataproofer</h2>
@@ -84,7 +87,7 @@
 
 <section>
     <section>
-    <h1>Custom Checks</h1>
+    <h2>Custom Checks</h2>
     </section>
     <section>
     <h2>Motivation</h2>
@@ -127,12 +130,12 @@
     </section>
 </section>
 <section>
-<h1>Alternative tools</h1>
+<h2>Alternative tools</h2>
 <!-- Use this section to demo/highlight alternative tools -->
 </section>
 <section>
     <section>
-    <h1>OpenRefine</h1>
+    <h2>OpenRefine</h2>
     <h3>openrefine.org</h3>
     <p>Formerly Google Refine</p>
     </section>
@@ -148,13 +151,24 @@
     <h2>OpenRefine: Strengths</h2>
     <ul>
         <li>Open source software</li>
-        <li>Extensible<br/>custom checks/filters can be written in Clojure, Python/Jython, or Refine's own expression language.</li>
+        <li>Extensible<br/>custom checks/filters can be written in Clojure, Python/Jython, or Refine's own expression language</li>
     </ul>
+    </section>
+    <section>
+    <h2>OpenRefine: Weaknesses</h2>
+    <ul>
+        <li>Can't handle large files (&gt; 500 KB)</li>
+        <li>Feels slow</li>
+        <li>No easy way to track changes (not very reproducible)</li>
+    </ul>
+    </section>
+    <section>
+    <h2>OpenRefine Demo</h2>
     </section>
 </section>
 <section>
     <section>
-    <h1>Trifacta Wrangler</h1>
+    <h2>Trifacta Wrangler</h2>
     <h3>trifacta.com</h3>
     <p>Formerly Stanford Data Wrangler</p>
 
@@ -182,43 +196,38 @@
     <section>
     <h2>Trifacta: Strengths</h2>
     <ul>
-        <li>Filters provide suggested edits</li>
-        <li>Interactive histograms are an elegant method of data exploration</li> 
-        <li>Very helpful script builder</li>
-        <li>Scripts help you track your changes =&gt; <br />reproducible data munging</li>
+        <li>Interactive histograms</li> 
+        <li>Script builder</li>
+        <li>Reproducible data cleaning</li>
+        <li>Takes a 500 KB sample from large datasets</li>
     </ul>
     </section>
     <section>
     <h2>Trifacta: Weaknesses</h2>
     <ul>
-        <li>Requires an internet connection</li>
+        <li>Requires an internet connection (may have to setup proxy settings)</li>
         <li>May not be appropriate for confidential data</li>
     </ul>
     </section>
-</section>
-<section>
     <section>
-    <h1>MS Excel</h1>
-    </section>
-    <section>
-    <h2>Excel Conditional Formatting</h2>
-
+    <h2>Trifacta Demo</h2>
     </section>
 </section>
 <section>
     <section>
-    <h1>Conclusion</h1>
+    <h2>Conclusion</h2>
     </section>
     <section>
-    <h2>Useful for</h2>
+    <h2>Use Dataproofer for</h2>
     <ul>
-        <li> Data quality checks for data entry process</li>
-        <li> Nice high-level overview of potential data errors</li>
-        <li> First check after downloading or creating a new dataset.</li>
+        <li>Data quality checks for data entry</li>
+        <li>Nice high-level overview of potential data errors</li>
+        <li>First check after downloading or creating a new dataset</li>
     </ul>
     </section>
     <section>
-    <p>OpenRefine and Trifacta Wrangler are more mature tools which also support editing of data and preliminary analysis of distributions.</p>
+    <p>If you need more, <br />
+    consider OpenRefine and Trifacta Wrangler.</p>
     </section>
 </section>
 
