@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Dataproofer Demo - Jonathan Page - UHERO</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/serif.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+<section>
+    <h1>Dataproofer</h1>
+    <p>Spell check for data</p>
+    <p>&nbsp;</p>
+    <p><em>Jonathan Page</em></p>
+    <p>UHERO, University of Hawaii</p>
+</section>
+<section>
+    <p>Spell check identifies potential spelling errors.</p>
+    <p>Dataproofer identifies potential data errors.</p>
+</section>
+<section>
+    <h2>Primary Use Case</h2>
+    <p>Quick check of data quality<br /> immediately following data collection</p>
+</section>
+<section>
+<section>
+    <h2>Strengths</h2>
+    <ul>
+        <li>Fast, automated quality checks</li>
+        <li>Cross-platform (Window, OS X, Linux)</li>
+        <li>Supports XLSX, XLS, TSV, CSV, PSV, and Google Spreadsheets</li>
+        <li>Customizable checks</li>
+    </ul>
+    </section>
+    <section>
+    <h2>Weaknesses</h2>
+    <ul>
+        <li>Creating custom checks requires some programming experience</li>
+        <li>Not for editing</li>
+        <li>Does not like large data (&gt; 500 KB)</li>
+        <li>Does not support statistical software data formats</li>
+    </ul>
+    </section>
+</section>
+<section>
+    <section>
+    <h2>Using Dataproofer</h2>
+    </section>
+    <section>
+    <h2>Install Dataproofer</h2>
+    <a href="http://dataproofer.org">dataproofer.org</a>
+    </section>
+    <section>
+    <h2>Load Raw Data</h2>
+    <img alt="Loading Data" src="img/dataproofer-load-data.png" />
+    </section>
+    <section>
+    <h2>Run Default Checks</h2>
+    <img alt="Running Default Checks" src="img/dataproofer-run-checks.png" />
+    </section>
+    <section>
+    <h2>Review Results</h2>
+    <img alt="Results View" src="img/dataproofer-review-checks.png" />
+    </section>
+    <section>
+    <h2>Demo</h2>
+    <p>patients.csv</p>
+    </section>
+</section>
+
+<section>
+<h2>Alternative tools</h2>
+<!-- Use this section to demo/highlight alternative tools -->
+</section>
+<section>
+    <section>
+    <h2>OpenRefine</h2>
+    <h3>openrefine.org</h3>
+    <p>Formerly Google Refine</p>
+    </section>
+    <section>
+    <h2>OpenRefine Facets</h2>
+    <img src="img/openrefine-facets.png" alt="OpenRefine Facets" />
+    </section>
+    <section>
+    <h2>OpenRefine Clusters</h2>
+    <img src="img/openrefine-cluster-edit.png" alt="OpenRefine Clustering" />
+    </section>
+    <section>
+    <h2>OpenRefine: Strengths</h2>
+    <ul>
+        <li>Open source software</li>
+        <li>Extensible<br/>custom checks/filters can be written in Clojure, Python/Jython, or Refine's own expression language</li>
+    </ul>
+    </section>
+    <section>
+    <h2>OpenRefine: Weaknesses</h2>
+    <ul>
+        <li>Can't handle large files (&gt; 500 KB)</li>
+        <li>Feels slow</li>
+        <li>No easy way to track changes (not very reproducible)</li>
+    </ul>
+    </section>
+    <section>
+    <h2>OpenRefine Demo</h2>
+    </section>
+</section>
+<section>
+    <section>
+    <h2>Trifacta Wrangler</h2>
+    <h3>trifacta.com</h3>
+    <p>Formerly Stanford Data Wrangler</p>
+
+    </section>
+    <section>
+    <h2>Trifacta: Overview</h2>
+    <img src="img/trifacta-field.png" alt="Trifacta with Field Dataset" />
+
+    </section>
+    <section>
+    <h2>Trifacta: Filter</h2>
+    <img src="img/trifacta-filter.png" alt="Trifacta Filter Feature" />
+
+    </section>
+    <section>
+    <h2>Trifacta: Scripts</h2>
+    <img src="img/trifacta-script.png" alt="Trifacta Scripting Feature" />
+
+    </section>
+    <section>
+    <h2>Trifacta: Scripting Without Code</h2>
+    <img src="img/trifacta-scripting-without-code.png" alt="Trifacta Scripting with the Mouse" />
+
+    </section>
+    <section>
+    <h2>Trifacta: Strengths</h2>
+    <ul>
+        <li>Interactive histograms</li> 
+        <li>Script builder</li>
+        <li>Reproducible data cleaning</li>
+        <li>Takes a 500 KB sample from large datasets</li>
+    </ul>
+    </section>
+    <section>
+    <h2>Trifacta: Weaknesses</h2>
+    <ul>
+        <li>Requires an internet connection (may have to setup proxy settings)</li>
+        <li>May not be appropriate for confidential data</li>
+    </ul>
+    </section>
+    <section>
+    <h2>Trifacta Demo</h2>
+    </section>
+</section>
+<section>
+    <section>
+    <h2>Conclusion</h2>
+    </section>
+    <section>
+    <h2>Use Dataproofer for</h2>
+    <ul>
+        <li>Data quality checks for data entry</li>
+        <li>Nice high-level overview of potential data errors</li>
+        <li>First check after downloading or creating a new dataset</li>
+    </ul>
+    </section>
+    <section>
+    <h2>Use OpenRefine for</h2>
+    <ul>
+        <li>Viewing histograms of columns</li>
+        <li>Correcting misspellings</li>
+        <li>Identifying and correcting data entry errors</li>
+    </ul>
+    </section>
+    <section>
+    <h2>Use Trifacta Wrangler for</h2>
+    <ul>
+        <li>Viewing interactive histograms of columns</li>
+        <li>Easy generation of new columns based on existing columns</li>
+        <li>Reproducible data munging</li>
+    </ul>
+    </section>
+</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
